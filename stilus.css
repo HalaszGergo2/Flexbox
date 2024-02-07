@@ -1,0 +1,56 @@
+*{box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    max-width: 856px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+main, header, article, aside, nav, footer, section{
+    border: 1px solid grey;
+    padding: 10px;
+}
+header{
+    width: 100%;
+    flex: 0 0 100%;
+}
+nav{
+    background-color: rgb(146, 187, 110);;
+    width: 20%;
+    flex: 0 0 20%;
+}
+article{
+    background-color: lightblue;
+    flex: 0 0 calc(60% - 20px);
+}
+aside{
+    background-color: rgb(200, 230, 173);
+    width: 20%;
+    flex: 0 0 20%;
+}
+footer{
+    width: 100%;
+    flex: 0 0 100%;
+}
+article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+section{
+    flex: 0 0 25%;
+}
+section:nth-child(2){
+    order: -1;
+}
+section:nth-child(3){
+    order: -1;
+}
